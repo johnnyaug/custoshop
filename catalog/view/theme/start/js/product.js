@@ -95,4 +95,8 @@ jQuery(document).ready(function () {
 			$input.val(parseInt($input.val()) + 1);
 		});
 	});
+	$('.image-special input').change(function() {
+		var imgSrc = $(this).siblings('img').prop('src');
+		$('.thumbnails .thumbnails__big-image a').append('<img style="position:absolute;top:50px;" src="' + imgSrc +'">')
+	});
 });

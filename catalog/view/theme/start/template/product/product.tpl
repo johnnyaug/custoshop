@@ -228,6 +228,24 @@ global $config;
               </div>
             </div>
             <?php } ?>
+			<?php if ($option['type'] == 'image-special') { ?>
+            <div class="form-group<?php echo ($option['required'] ? ' required' : ''); ?>">
+              <label class="control-label"><?php echo $option['name']; ?></label>
+              <div id="input-option<?php echo $option['product_option_id']; ?>" class="image-special">
+                <?php foreach ($option['product_option_value'] as $option_value) { ?>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="option[<?php echo $option['product_option_id']; ?>]" value="<?php echo $option_value['product_option_value_id']; ?>" />
+                    <img src="<?php echo $option_value['image']; ?>" alt="<?php echo $option_value['name'] . ($option_value['price'] ? ' ' . $option_value['price_prefix'] . $option_value['price'] : ''); ?>" class="img-thumbnail" /> <?php echo $option_value['name']; ?>!!
+                    <?php if ($option_value['price']) { ?>
+                    (<?php echo $option_value['price_prefix']; ?><?php echo $option_value['price']; ?>)
+                    <?php } ?>
+                  </label>
+                </div>
+                <?php } ?>
+              </div>
+            </div>
+            <?php } ?>
             <?php if ($option['type'] == 'text') { ?>
             <div class="form-group<?php echo ($option['required'] ? ' required' : ''); ?>">
               <label class="control-label" for="input-option<?php echo $option['product_option_id']; ?>"><?php echo $option['name']; ?></label>

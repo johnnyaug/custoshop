@@ -63,6 +63,11 @@
                 <?php } else { ?>
                 <option value="image"><?php echo $text_image; ?></option>
                 <?php } ?>
+				<?php if ($type == 'image-special') { ?>
+                <option value="image-special" selected="selected"><?php echo $text_image_special; ?></option>
+                <?php } else { ?>
+                <option value="image-special"><?php echo $text_image_special; ?></option>
+                <?php } ?>
                 </optgroup>
                 <optgroup label="<?php echo $text_input; ?>">
                 <?php if ($type == 'text') { ?>
@@ -152,7 +157,7 @@
   </div>
   <script type="text/javascript"><!--
 $('select[name=\'type\']').on('change', function() {
-	if (this.value == 'select' || this.value == 'radio' || this.value == 'checkbox' || this.value == 'image') {
+	if (this.value == 'select' || this.value == 'radio' || this.value == 'checkbox' || this.value == 'image' || this.value == 'image-special') {
 		$('#option-value').show();
 	} else {
 		$('#option-value').hide();

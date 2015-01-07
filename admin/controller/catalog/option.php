@@ -268,6 +268,7 @@ class ControllerCatalogOption extends Controller {
 		$data['text_radio'] = $this->language->get('text_radio');
 		$data['text_checkbox'] = $this->language->get('text_checkbox');
 		$data['text_image'] = $this->language->get('text_image');
+		$data['text_image_special'] = $this->language->get('text_image_special');
 		$data['text_input'] = $this->language->get('text_input');
 		$data['text_text'] = $this->language->get('text_text');
 		$data['text_textarea'] = $this->language->get('text_textarea');
@@ -479,7 +480,7 @@ class ControllerCatalogOption extends Controller {
 			foreach ($options as $option) {
 				$option_value_data = array();
 
-				if ($option['type'] == 'select' || $option['type'] == 'radio' || $option['type'] == 'checkbox' || $option['type'] == 'image') {
+				if ($option['type'] == 'select' || $option['type'] == 'radio' || $option['type'] == 'checkbox' || $option['type'] == 'image' || $option['type'] == 'image-special') {
 					$option_values = $this->model_catalog_option->getOptionValues($option['option_id']);
 
 					foreach ($option_values as $option_value) {
@@ -507,7 +508,7 @@ class ControllerCatalogOption extends Controller {
 
 				$type = '';
 
-				if ($option['type'] == 'select' || $option['type'] == 'radio' || $option['type'] == 'checkbox' || $option['type'] == 'image') {
+				if ($option['type'] == 'select' || $option['type'] == 'radio' || $option['type'] == 'checkbox' || $option['type'] == 'image' || $option['type'] == 'image-special') {
 					$type = $this->language->get('text_choose');
 				}
 

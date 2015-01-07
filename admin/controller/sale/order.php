@@ -750,7 +750,7 @@ class ControllerSaleOrder extends Controller {
 					$options = $this->model_sale_order->getOrderOptions($this->request->get['order_id'], $product['order_product_id']);
 
 					foreach ($options as $option) {
-						if ($option['type'] == 'select' || $option['type'] == 'radio' || $option['type'] == 'image') {
+						if ($option['type'] == 'select' || $option['type'] == 'radio' || $option['type'] == 'image' || $option['type'] == 'image-special') {
 							$option_data[$option['product_option_id']] = $option['product_option_value_id'];
 						}
 

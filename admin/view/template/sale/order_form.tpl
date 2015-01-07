@@ -1303,7 +1303,7 @@ $('input[name=\'product\']').autocomplete({
 					html += '</div>';
 				}
 			
-				if (option['type'] == 'image') {
+				if (option['type'] == 'image' || option['type'] == 'image-special') {
 					html += '<div class="form-group' + (option['required'] ? ' required' : '') + '">';
 					html += '  <label class="col-sm-2 control-label" for="input-option' + option['product_option_id'] + '">' + option['name'] + '</label>';
 					html += '  <div class="col-sm-10">';
