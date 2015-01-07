@@ -1,0 +1,303 @@
+@import (reference) "_elements";
+@color1: #EC6467;
+@color2: #7FDC8C;
+@color3: #444;
+@color4: #aaa;
+/*--------------------------------------------------------------
+Skin 01
+--------------------------------------------------------------*/
+.btn-primary{
+	background-color: @color3;
+	border-color: transparent;
+	&:hover{
+		background-color: @color1;
+		border-color: transparent;
+	}
+}
+//////////////////general//////////////////
+/***************skin__common****************/
+a,
+a:hover{
+	color: @color1;
+}
+.kl-main-content,
+#login-form{
+	background-color: #fff;
+}
+.breadcrumb {
+	a {
+		color: #aaa;
+		&:hover{
+			color: @color1;
+		}
+	}
+}
+.free-ship{
+	background-color: @color1;
+	color: #ffffff;
+}
+/***************skin__header****************/
+.header{
+	background-color: #FFFFFF;
+}
+.mini-cart{
+	&__view-cart,
+	&__checkout{
+		background-color: #222222;
+		color: #FFFFFF;
+		margin: 0 5px;
+		&:hover{
+			background-color: @color3;
+		}
+	}
+}
+.live-search-container {
+	input {
+		border-color: #EEEEEE;
+	}
+}
+.cart-product-total-number{
+	background-color: @color1;
+	color: #ffffff;
+}
+
+/***************skin__topbar****************/
+.topbar{
+	background-color: #f2f2f2;
+	.btn-link{
+		color: #999;
+		text-transform: uppercase;
+		font-size: 11px;
+		font-weight: normal;
+	}
+	a{
+		color: #999;
+		text-transform: uppercase;
+		font-size: 11px;
+	}
+}
+
+/***************skin__footer****************/
+.footer{
+	background-color: #222222;
+	border-color: @color3;
+	color: #666;
+	a{
+		color: #666;
+		&:hover{
+			color: @color1;
+		}
+	}
+	.box-heading{
+		color: #ffffff;
+	}
+	&__info:before,
+	&__address:before,
+	&__right:after{
+		background-color: @color3;
+	}
+	&__right .col-lg-12{
+		border-color: @color3;
+	}
+	&__info a{
+		background-color: #444;
+		color: #FFFFFF;
+	}
+	.useful-info{
+		border-color: #333;
+	}
+}
+.steps:after{
+	background-color: @color3;
+}
+.social-newsletter{
+	background-color: #222;
+	border-color: @color3;
+}
+.social-icons__item{
+	&:before{
+		color: #FFFFFF;
+		background-color: @color3;
+	}
+	&:hover:before{
+		color: @color3;
+		background-color: #FFFFFF;
+	}
+}
+.newsletter{
+	color: #FFFFFF;
+	&__input{
+		&:focus{
+			background-color: #5a5a5a;
+		}
+		background-color: #333333;
+	}
+	&__submit-button {
+		color: #ccc;
+		&:hover{
+			color: @color3;
+		}
+	}
+	&__submit-button{
+		background-color: @color3;
+	}
+}
+#powered{
+	background-color: #222222;
+	color: #666;
+}
+/***************skin__navigation****************/
+.navigation {
+	background-color: #fff;
+	border-color: #eeeeee;
+}
+.menu-category-description{
+	color: @color4;
+}
+@media @lg {
+	.main-nav__item > a:before{
+		background-color: @color1;
+	}
+}
+
+//////////////////modules//////////////////
+/***************skin__module--showcase****************/
+.kuler-showcase-module {
+	&:before{
+		background-color: #eeeeee;
+	}
+	.box-heading {
+		span {
+			color: @color4;
+			&:before {
+				background-color: @color4;
+			}
+			&.active{
+				color: @color3;
+			}
+		}
+	}
+	.nav span{
+		&:hover:before{
+			background-color: @color1;
+			color: #ffffff;
+		}
+		&:before{
+			color: #000;
+		}
+	}
+}
+
+/***************skin__module--contactform****************/
+.kcf-module {
+	input, textarea {
+		background-color: @color3;
+	}
+}
+
+//////////////////components//////////////////
+/***************skin__live-search****************/
+.dropdown-menu .live-search-load-more:hover{
+	background-color: @color1 ;
+	color: #FFFFFF ;
+}
+
+/***************skin__products****************/
+.product-rating{
+	color: @color4;
+}
+.product-sale{
+	background-color: @color2;
+}
+.product-price--old{
+	color: @color4;
+
+}
+//product-list
+.product-list {
+	.product{
+		&-detail-button{
+			&:hover{
+				color: @color1;
+			}
+			&--cart {
+				background-color: @color3;
+				color: #aaaaaa;
+				&:hover{
+					background-color: @color1;
+					color: #ffffff;
+				}
+			}
+			a{
+				color: @color3;
+				&:hover{
+					color: @color1;
+				}
+			}
+		}
+		&-name a{
+			color: @color3;
+			&:hover{
+				color: @color1;
+			}
+		}
+		&-description{
+			color: @color4;
+		}
+	}
+}
+//product-grid
+.product-grid{
+	.product-detail-button{
+		background-color: #fff;
+		&:hover {
+			background-color: @color1;
+			color: #FFFFFF;
+		}
+		&--cart{
+			background-color: @color1;
+		}
+		&--quick-view {
+			a {
+				background-color: @color4;
+				color: #ffffff;
+			}
+			a:hover{
+				background-color: @color1;
+			}
+		}
+	}
+	.product-name a{
+		color: @color3;
+	}
+}
+//product tabs
+.product-tabs{
+	.nav>li>a{
+		background-color: #F8F8F8;
+		border-color: #F8F8F8;
+		color: @color3;
+	}
+	.nav-tabs>li.active>a,
+	.nav>li>a:hover, .nav>li>a:focus{
+		background-color: @color3;
+		border-color: @color3;
+		color: #ffffff;
+	}
+}
+
+/***************skin__categories****************/
+.categories-filter {
+	background-color: #EEEEEE;
+}
+.refine-search{
+	a{
+		background-color: @color3;
+		color: #ffffff;
+	}
+}
+
+/***************skin__one-page-checkout****************/
+#confirm-order{
+	color: #ffffff;
+}

@@ -1,0 +1,71 @@
+@import (reference) "_elements";
+/*--------------------------------------------------------------
+Skin
+--------------------------------------------------------------*/
+.btn-primary{
+	background-color: @color3;
+	border-color: transparent;
+	&:hover{
+		background-color: @color1;
+		border-color: transparent;
+	}
+}
+.steps__item:hover,
+.contact__item:hover,
+.footer a:hover{
+	color: #ffffff;
+}
+.bottom-blocks{
+	.box-heading span{
+		color: @color3 !important;
+	}
+	.product-name{
+		a:hover{
+			color: @color1;
+		}
+	}
+	.product-price{
+		color: @color4;
+	}
+}
+.free-ship{
+	background-color: #63b5bd;
+	color: #ffffff;
+}
+/***************skin__custom****************/
+.ship{
+	[class*='col-']{
+		color: @color4;
+	}
+}
+.intro{
+	border-color: #EEEEEE;
+	&__title{
+		color: @color3;
+	}
+	&__sub-title{
+		color: @color3;
+	}
+	&__text{
+		color: #888888;
+	}
+}
+.top-block{
+	background-color: #F2F2F2;
+	&__item {
+		background-color: #fff;
+	}
+}
+.shop-by-category{
+	&__sub-title{
+		a{
+			color: #ffffff;
+			&:hover{
+				color: #ffffff;
+			}
+			&:before{
+				background-color: #fff;
+			}
+		}
+	}
+}

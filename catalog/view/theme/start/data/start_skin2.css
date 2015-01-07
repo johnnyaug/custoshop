@@ -1,0 +1,62 @@
+/*general*/
+body {
+	background-image: url();
+	
+	
+	
+}
+body {
+	
+		font-family: "Varela Round";
+	
+	
+	
+	
+		background-color: #ababab;
+	
+	
+		background-image: url(http://demo.kulerthemes.com/start/opencart2/1/catalog/view/theme/start/data/patterns/stardust.png);
+	
+	
+		color: #333;
+	
+}
+/*background color settings*/
+.topbar{
+	background-color: ;
+}
+.header{
+	background-color: ;
+}
+.navigation{
+	background-color: #63B5BD;
+}
+.footer{
+	background-color: ;
+}
+.social-newsletter{
+	background-color: ;
+}
+#powered{
+	background-color: ;
+}
+
+/*color settings*/
+.topbar{
+	color: ;
+}
+.header{
+	color: ;
+}
+.main-nav__item > a{
+	color: #ffffff;
+}
+.footer{
+	color: ;
+}
+.social-newsletter{
+	color: ;
+}
+#powered{
+	color: ;
+}

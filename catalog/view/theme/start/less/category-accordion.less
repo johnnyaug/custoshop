@@ -1,0 +1,63 @@
+@import (reference) "_elements";
+/*--------------------------------------------
+Box category
+----------------------------------------------*/
+.box-category{
+	a{
+		display: block;
+		font-size: 13px;
+		color: #878787;
+	}
+	> li {
+		text-transform: uppercase;
+		position: relative;
+		border-bottom: 1px solid #eeeeee;
+		padding: 10px 0;
+		ul {
+			display: none;
+			width: 100%;
+		}
+		> .toggle {
+			display: inline-block;
+			width: 15px;
+			height: 15px;
+			cursor: pointer;
+			position: absolute;
+			right: 15px;
+			top: 6px;
+			&:before{
+				content: "+";
+				display: inline-block;
+				font-size: 20px;
+			}
+		}
+	}
+	> li.active {
+		ul {
+			display: block;
+		}
+		> .toggle {
+			&:before {
+				.rotation(45deg);
+			}
+		}
+	}
+}
+.box-category__sub{
+	li{
+		margin-left: 15px;
+	}
+}
+
+//768px
+@media @sm {
+
+}
+//1024px
+@media @md {
+
+}
+//1200px
+@media @lg {
+
+}

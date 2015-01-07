@@ -1,0 +1,62 @@
+/*general*/
+body {
+	background-image: url();
+	
+	
+	
+}
+body {
+	
+		font-family: "Varela Round";
+	
+	
+	
+	
+		background-color: #ababab;
+	
+	
+		background-image: url(http://dc.local/test/oc2/catalog/view/theme/start/data/patterns/binding_dark_retina.png);
+	
+	
+		color: #333;
+	
+}
+/*background color settings*/
+.topbar{
+	background-color: ;
+}
+.header{
+	background-color: ;
+}
+.navigation{
+	background-color: ;
+}
+.footer{
+	background-color: ;
+}
+.social-newsletter{
+	background-color: ;
+}
+#powered{
+	background-color: ;
+}
+
+/*color settings*/
+.topbar{
+	color: ;
+}
+.header{
+	color: ;
+}
+.main-nav__item > a{
+	color: ;
+}
+.footer{
+	color: ;
+}
+.social-newsletter{
+	color: ;
+}
+#powered{
+	color: ;
+}

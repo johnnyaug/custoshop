@@ -1,0 +1,60 @@
+/*general*/
+body {
+	background-image: url();
+	
+	
+	
+}
+body {
+	
+		font-family: "Varela Round";
+	
+	
+	
+	
+		background-color: #ababab;
+	
+	
+	
+		color: #333;
+	
+}
+/*background color settings*/
+.topbar{
+	background-color: #fff;
+}
+.header{
+	background-color: #141414;
+}
+.navigation{
+	background-color: ;
+}
+.footer{
+	background-color: #000;
+}
+.social-newsletter{
+	background-color: #000;
+}
+#powered{
+	background-color: #000;
+}
+
+/*color settings*/
+.topbar{
+	color: ;
+}
+.header{
+	color: ;
+}
+.main-nav__item > a{
+	color: #fff;
+}
+.footer{
+	color: ;
+}
+.social-newsletter{
+	color: ;
+}
+#powered{
+	color: ;
+}

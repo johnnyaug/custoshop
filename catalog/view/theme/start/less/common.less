@@ -1,0 +1,150 @@
+@import (reference) "_elements";
+/*--------------------------------------------------------------
+Elements
+--------------------------------------------------------------*/
+a,a:focus,a:hover{
+	outline: none;
+	text-decoration: none;
+}
+.btn{
+	.transition--ex;
+	text-transform: uppercase;
+	&[value]{
+		font-weight: 300;
+	}
+}
+.box-heading{
+	font-size: 22px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+.kl-main-content{
+	position: relative;
+	z-index: 1;
+	body[class*='product'] & {
+		z-index: auto;
+	}
+}
+.btn-lg,
+.btn-group-lg>.btn,
+.dropdown-menu,
+.well,
+.list-group-item:first-child,
+.list-group-item:last-child,
+.breadcrumb,
+
+.form-control,
+.btn,
+.form-control,
+.panel-heading,
+.panel-group .panel,
+.alert{
+	.rounded(0);
+}
+.dropdown-menu{
+	border: none;
+	top: 120%;
+	display: block;
+	visibility: hidden;
+	opacity: 0;
+	.transition--ex;
+}
+.open>.dropdown-menu{
+	visibility: visible;
+	opacity: 1;
+	top: 100%;
+}
+.owl-carousel{
+	margin-bottom: 20px;
+}
+//login popup
+#login-popup{
+	margin: auto;
+	max-width: 600px;
+	background: #fff;
+	padding: 30px 15px;
+	font-size: 0;
+	position: relative;
+}
+.breadcrumb{
+	>li+li:before{
+		.kulerfont--ex;
+		content: "\f0da";
+	}
+}
+#content{
+	position: relative;
+}
+.form-horizontal .form-group{
+	font-size: 0;
+}
+legend {
+	font-size: 18px;
+	padding: 7px 0px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #e5e5e5;
+}
+div.required .control-label:before {
+	content: '* ';
+	color: #F00;
+	font-weight: bold;
+}
+#notification {
+	top: 80px;
+	z-index: 9999;
+	opacity: 0;
+	right: 20px;
+	max-width: 400px;
+	padding: 15px;
+	position: fixed;
+	visibility: hidden;
+	margin-left: 20px;
+	background-color: #fff;
+	.box-shadow(0 6px 12px rgba(0, 0, 0, 0.175));
+	.transition--ex;
+	&.active {
+		top: 20px;
+		opacity: 1;
+		visibility: visible;
+	}
+}
+#login-form{
+	max-width: 600px;
+	margin: auto;
+	padding: 30px;
+	position: relative;
+}
+.button{
+	.btn;
+	.btn-primary;
+	padding: 10px;
+	display: inline-block;
+	color: #ffffff;
+	&:hover{
+		color: #ffffff;
+	}
+}
+.box-product{
+	font-size: 0;
+}
+/***************768px****************/
+@media @sm {
+
+}
+/***************1024px****************/
+@media @md {
+
+}
+/***************1200px****************/
+@media @lg {
+	.breadcrumb {
+		margin: 0 -100% 30px;
+		width: 300%;
+		padding: 20px 100%;
+	}
+	.common-home.skin2{
+		.product-layout{
+			width: 20%;
+		}
+	}
+}

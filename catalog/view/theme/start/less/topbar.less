@@ -1,0 +1,40 @@
+@import (reference) "_elements";
+/*--------------------------------------------------------------
+Topbar Block
+--------------------------------------------------------------*/
+.topbar{
+	z-index: 9;
+	padding: 10px 0;
+	text-align: center;
+	[class*='col-']{
+		vertical-align: middle;
+	}
+	.btn-link{
+		text-align: left;
+	}
+	&__currency{
+		display: inline-block;
+		.dropdown-toggle{
+			padding: 0;
+		}
+	}
+	&__language {
+		display: inline-block;
+		padding: 0 10px;
+		.dropdown-toggle{
+			padding: 0;
+		}
+	}
+}
+/***************768px****************/
+@media @sm {
+
+}
+/***************1024px****************/
+@media @md {
+
+}
+/***************1200px****************/
+@media @lg {
+
+}
